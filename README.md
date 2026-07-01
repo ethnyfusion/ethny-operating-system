@@ -3,6 +3,7 @@
 
 Repository central de pilotage pour organiser les projets Ethny, les recettes, les devis, les automatisations, le CRM, le plan financier, le contenu marketing, le site web et le projet créatif Henry Malik.
 
+
 Ce repository sert de base de travail pour ChatGPT, Codex, VS Code et les futures automatisations internes.
 
 ---
