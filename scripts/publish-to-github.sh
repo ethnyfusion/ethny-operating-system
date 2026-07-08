@@ -34,9 +34,9 @@ fi
 rsync -a \
   --exclude ".git" \
   --exclude ".github-sync" \
+  --include ".env.example" \
   --exclude ".env" \
   --exclude ".env.*" \
-  --exclude "!.env.example" \
   --exclude ".admin-secret.local" \
   --exclude "ADMIN_SECRET.local.txt" \
   --exclude "admin-login-local.html" \

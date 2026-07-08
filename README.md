@@ -55,6 +55,17 @@ ETHNY_DISABLE_LOCAL_ADMIN_BYPASS=true
 Documentation complete :
 
 - `docs/vercel-email-dashboard-deploy.md`
+- `docs/vercel-import-settings.md`
 - `docs/email-html-editor.md`
 - `docs/resend-local-test.md`
 - `docs/github-publish.md`
+
+## Publication GitHub
+
+Depuis un Terminal Mac connecte a GitHub :
+
+```bash
+bash scripts/publish-to-github.sh
+```
+
+Ou double-cliquer `PUBLISH-GITHUB-THEN-VERCEL.command`.

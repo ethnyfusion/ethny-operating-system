@@ -13,6 +13,12 @@ cd "/Users/reginaldsmit/Desktop/Codex ( Open ai ) /ethny-ai-ops/ethny-operating-
 bash scripts/publish-to-github.sh
 ```
 
+Ou double-cliquer :
+
+```text
+PUBLISH-GITHUB-THEN-VERCEL.command
+```
+
 Le script :
 
 - clone le repo GitHub dans `.github-sync/` ;
