@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="usage laser">
+  <rect x="0.5" y="0.5" width="63" height="63" rx="8" fill="#F7F4EE" stroke="#E1D8C7"/>
+  <g stroke="#1C3B34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 18H31"/>
+    <path d="M13 26H25"/>
+    <path d="M13 34H31"/>
+    <path d="M42 12L34 52"/>
+    <path d="M47 18L39 25"/>
+    <path d="M50 31H41"/>
+  </g>
+</svg>

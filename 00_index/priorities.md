@@ -1,40 +1,17 @@
-# Priorités
+# Priorites
 
-## Priorité 1 — Business Ethny
+## Priorite 1
 
-- Devis clients.
-- Relances.
-- Offres premium.
-- Google Business Profile.
-- Prospection.
-- Partenariats.
+Convertir les demandes clients avec des propositions claires, premium et rentables.
 
-## Priorité 2 — Organisation culinaire
+## Priorite 2
 
-- Recettes.
-- Menus.
-- Fiches techniques.
-- Fiches production.
-- Pâtisserie.
+Structurer les offres, menus, recettes et fiches techniques pour gagner du temps en production.
 
-## Priorité 3 — Automatisation
+## Priorite 3
 
-- Gmail.
-- Notion.
-- CRM.
-- Hostinger.
-- Workflows commerciaux.
+Developper l'acquisition directe : prospection, Google Business Profile, contenu et SEO.
 
-## Priorité 4 — Contenu
+## Priorite 4
 
-- Instagram.
-- YouTube.
-- SEO.
-- Branding.
-
-## Priorité 5 — Créatif
-
-- Henry Malik.
-- Chapitres.
-- Illustrations.
-- Bible visuelle.
+Preparer progressivement le futur CRM sans connecter d'outils externes avant validation.

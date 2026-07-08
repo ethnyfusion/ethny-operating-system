@@ -1,0 +1,7 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cooking class">
+  <path d="M56 48V202" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M88 48V202" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M56 96H88" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M132 50C174 70 192 102 178 136C166 166 142 184 118 202" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M132 50C120 90 125 126 154 158" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+</svg>

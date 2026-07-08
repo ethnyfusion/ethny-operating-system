@@ -1,0 +1,24 @@
+folder,type,name,filename,source,canva_usage,status
+Brand Kit/Logos,logo,Logo principal,ethny-logo-principal-cercle-brise.svg,ethny/branding/logo/logo-cercle-brise.svg,Logo principal,ready
+Brand Kit/Logos,logo,Logo blanc sur fond vert,ethny-logo-blanc-fond-vert.svg,ethny/branding/logo/logo-cercle-brise-fond-fonce.svg,Logo pour fonds sombres,ready
+Brand Kit/Logos,logo,Logo fonce sur fond clair,ethny-logo-fonce-fond-clair.svg,ethny/branding/logo/logo-cercle-brise-fond-clair.svg,Logo pour fonds clairs,ready
+Brand Kit/Logos,logo,Icône,ethny-icone.svg,ethny/branding/logo/logo-icon.svg,Icône compacte,ready
+Brand Kit/Logos,logo,Badge cercle brise,ethny-badge-cercle-brise.svg,ethny/branding/logo/logo-cercle-brise.svg,Badge / sceau,ready
+Brand Kit/Logos,logo,Wordmark horizontal,ethny-wordmark-horizontal.svg,ethny/branding/logo/logo-horizontal.svg,Usage horizontal,ready
+Brand Kit/Logos,logo,Wordmark vertical,ethny-wordmark-vertical.svg,ethny/branding/logo/logo-vertical.svg,Usage vertical,ready
+Brand Kit/Logos,logo,Version monochrome,ethny-logo-monochrome-currentColor.svg,ethny/branding/logo/logo-monochrome.svg,Usage une couleur,ready
+Pictogrammes,pictogramme,Usage clearspace,usage-clearspace.svg,ethny/branding/icons/usage-clearspace.svg,Guide logo,ready
+Pictogrammes,pictogramme,Usage minimum size,usage-minimum-size.svg,ethny/branding/icons/usage-minimum-size.svg,Guide logo,ready
+Pictogrammes,pictogramme,Usage monochrome,usage-monochrome.svg,ethny/branding/icons/usage-monochrome.svg,Guide logo,ready
+Pictogrammes,pictogramme,Usage engraving,usage-engraving.svg,ethny/branding/icons/usage-engraving.svg,Guide support,ready
+Pictogrammes,pictogramme,Usage embossage,usage-embossage.svg,ethny/branding/icons/usage-embossage.svg,Guide support,ready
+Pictogrammes,pictogramme,Usage broderie,usage-broderie.svg,ethny/branding/icons/usage-broderie.svg,Guide support,ready
+Pictogrammes,pictogramme,Usage laser,usage-laser.svg,ethny/branding/icons/usage-laser.svg,Guide support,ready
+Pictogrammes,pictogramme,Usage enseigne,usage-enseigne.svg,ethny/branding/icons/usage-enseigne.svg,Guide support,ready
+Pictogrammes,pictogramme,Usage social,usage-social.svg,ethny/branding/icons/usage-social.svg,Réseaux sociaux,ready
+Pictogrammes,pictogramme,Usage print,usage-print.svg,ethny/branding/icons/usage-print.svg,Impression,ready
+Pictogrammes,pictogramme,Usage packaging,usage-packaging.svg,ethny/branding/icons/usage-packaging.svg,Packaging,ready
+Pictogrammes,pictogramme,Usage fond clair,usage-fond-clair.svg,ethny/branding/icons/usage-fond-clair.svg,Fond clair,ready
+Pictogrammes,pictogramme,Usage fond fonce,usage-fond-fonce.svg,ethny/branding/icons/usage-fond-fonce.svg,Fond fonce,ready
+Pictogrammes,pictogramme,Usage transparent,usage-transparent.svg,ethny/branding/icons/usage-transparent.svg,Transparent,ready
+Pictogrammes,pictogramme,Usage svg optimized,usage-svg-optimized.svg,ethny/branding/icons/usage-svg-optimized.svg,SVG optimisé,ready

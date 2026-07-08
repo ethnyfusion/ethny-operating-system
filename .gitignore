@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.admin-secret.local
+ADMIN_SECRET.local.txt
+admin-login-local.html
+.github-sync
+node_modules
+.next
+dist
+.react-email

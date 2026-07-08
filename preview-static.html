@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethny Email Preview</title>
+    <style>
+      @font-face {
+        font-family: "Cormorant Garamond";
+        src: url("/public/email-assets/brand-kit-canva/fonts/cormorant-garamond-600.woff2") format("woff2");
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: "Jost";
+        src: url("/public/email-assets/brand-kit-canva/fonts/jost-400.woff2") format("woff2");
+        font-weight: 400;
+      }
+
+      :root {
+        --forest-deep: #1c3b34;
+        --forest: #285447;
+        --sage: #5e8d7a;
+        --cream: #f2ebdc;
+        --stone: #c9c5bb;
+        --anthracite: #2a2a2a;
+        --white: #fffffe;
+        --line: #ded8ca;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--cream);
+        color: var(--anthracite);
+        font-family: "Jost", Arial, sans-serif;
+        margin: 0;
+      }
+
+      button {
+        font: inherit;
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: 320px minmax(0, 1fr);
+        min-height: 100vh;
+      }
+
+      aside {
+        background: var(--forest-deep);
+        color: var(--cream);
+        padding: 24px;
+      }
+
+      aside img {
+        width: 190px;
+      }
+
+      .kicker,
+      .template small,
+      .header p {
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+      }
+
+      .kicker {
+        color: rgba(242, 235, 220, 0.74);
+        font-size: 12px;
+        margin: 14px 0 22px;
+      }
+
+      .controls {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+      }
+
+      .controls button,
+      .template {
+        background: transparent;
+        border: 1px solid rgba(242, 235, 220, 0.28);
+        border-radius: 10px;
+        color: var(--cream);
+        cursor: pointer;
+        padding: 11px 12px;
+        text-align: left;
+      }
+
+      .controls button.active,
+      .template.active {
+        background: var(--cream);
+        color: var(--forest-deep);
+      }
+
+      .templates {
+        display: grid;
+        gap: 8px;
+      }
+
+      .template {
+        display: grid;
+        gap: 4px;
+        width: 100%;
+      }
+
+      .template strong {
+        font-size: 14px;
+      }
+
+      .template small {
+        font-size: 11px;
+      }
+
+      main {
+        min-width: 0;
+      }
+
+      .header {
+        align-items: end;
+        background: var(--white);
+        border-bottom: 1px solid var(--line);
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+        padding: 24px 32px;
+      }
+
+      .header p {
+        color: var(--sage);
+        font-size: 12px;
+        margin: 0 0 8px;
+      }
+
+      .header h1 {
+        color: var(--forest-deep);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 1;
+        margin: 0 0 10px;
+      }
+
+      .header span,
+      .objective {
+        color: rgba(42, 42, 42, 0.72);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .stage {
+        display: grid;
+        justify-content: center;
+        overflow: auto;
+        padding: 32px;
+      }
+
+      iframe {
+        background: var(--cream);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        box-shadow: 0 20px 60px rgba(28, 59, 52, 0.12);
+        min-height: 900px;
+        width: 720px;
+      }
+
+      .mobile iframe {
+        width: 390px;
+      }
+
+      @media (max-width: 900px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+
+        .header {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside>
+        <img src="/public/email-assets/logo/ethny-logo-cercle-brise-horizontal-white.svg" alt="Ethny Nomad Cuisine" />
+        <p class="kicker">Email Design System</p>
+        <div class="controls">
+          <button id="desktop" class="active" type="button">Desktop</button>
+          <button id="mobile" type="button">Mobile</button>
+        </div>
+        <div id="templates" class="templates"></div>
+      </aside>
+      <main>
+        <header class="header">
+          <div>
+            <p id="category"></p>
+            <h1 id="title"></h1>
+            <span id="subject"></span>
+          </div>
+          <div id="objective" class="objective"></div>
+        </header>
+        <section id="stage" class="stage">
+          <iframe id="frame" title="Apercu email"></iframe>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const assets = {
+        logoDark: "/public/email-assets/logo/ethny-logo-cercle-brise-horizontal.svg",
+        logoLight: "/public/email-assets/logo/ethny-logo-cercle-brise-horizontal-white.svg",
+        chefIcon: "/public/email-assets/brand-kit-canva/icons/icon-chef-prive.svg",
+        eventIcon: "/public/email-assets/brand-kit-canva/icons/icon-evenement.svg",
+        classIcon: "/public/email-assets/brand-kit-canva/icons/icon-cooking-class.svg",
+        quoteIcon: "/public/email-assets/brand-kit-canva/icons/icon-devis.svg",
+        privateChef: "/public/email-assets/media/photos/gallery-chef-service-table.jpg",
+        catering: "/public/email-assets/media/photos/hero-bouchees-cocktail.jpg",
+        classes: "/public/email-assets/media/photos/gallery-geste-atmosphere.jpg",
+        story: "/public/email-assets/media/photos/chef-reginald-smith-portrait.jpg",
+        website: "/public/email-assets/media/photos/reception-tables-dressees.jpg",
+        seasonal: "/public/email-assets/media/photos/menu-jardin-vegetal.jpg",
+      };
+
+      const campaigns = [
+        ["NewWebsiteAnnouncement", "marketing", "Le nouveau site Ethny est en ligne", "Annoncer le nouveau site, la navigation et les demandes simplifiees.", "Nouveau site Ethny", assets.website, "Decouvrir le site"],
+        ["BrandStoryEmail", "newsletter", "L'histoire derriere Ethny Nomad Cuisine", "Raconter la marque, la cuisine fusion et l'approche humaine.", "Une cuisine francaise ouverte sur le monde", assets.story, "Lire l'histoire"],
+        ["PrivateChefExperience", "marketing", "Une experience chef privee, chez vous", "Presenter l'experience chef a domicile premium.", "Un diner de chef, chez vous", assets.privateChef, "Verifier la disponibilite"],
+        ["EventCateringEmail", "marketing", "Traiteur evenementiel sur mesure", "Mettre en avant mariages, anniversaires, evenements prives et corporate.", "Une reception claire, elegante et bien rythmee", assets.catering, "Demander un devis"],
+        ["CookingClassesEmail", "marketing", "Cours de cuisine et ateliers prives", "Presenter les cours, ateliers prives et formations.", "Cuisiner, comprendre, partager", assets.classes, "Imaginer un atelier"],
+        ["ChefPartnersAnnouncement", "marketing", "Ethny pour les lieux, gites et partenaires", "Structurer une annonce partenaires.", "Une experience chef pour vos clients", assets.privateChef, "Planifier un echange"],
+        ["ClientReactivationEmail1", "reactivation", "Un mot d'Ethny Nomad Cuisine", "Reprendre contact avec douceur.", "J'espere que vous allez bien", assets.story, "Envoyer une demande"],
+        ["ClientReactivationEmail2", "reactivation", "Une prochaine table a imaginer ?", "Relancer avec un angle service.", "Une prochaine table a imaginer ?", assets.seasonal, "Verifier une possibilite"],
+        ["ClientReactivationEmail3", "reactivation", "Restons en contact", "Dernier rappel cordial sans pression.", "Je vous laisse revenir vers moi au bon moment", assets.privateChef, "Revoir les experiences"],
+        ["ReviewRequestEmail", "transactionnel", "Merci pour votre confiance", "Demander un avis Google apres prestation.", "Votre retour compte beaucoup", assets.website, "Laisser un avis Google"],
+        ["QuoteFollowUpEmail", "commercial", "Votre proposition Ethny", "Relancer un prospect ayant recu une proposition.", "Votre proposition Ethny", assets.catering, "Voir la proposition"],
+        ["SeasonalMenuEmail", "newsletter", "Inspirations de saison", "Presenter une inspiration menu sans prix final.", "Une table autour du vegetal, des epices et du geste", assets.seasonal, "Demander un menu"],
+        ["GiftCardEmail", "marketing", "Offrir une experience Ethny", "Presenter une carte cadeau ou experience a offrir.", "Offrir une experience culinaire", assets.privateChef, "Demander les possibilites"],
+        ["TemplateStarter", "template", "Template de depart Ethny", "Base locale pour creer une nouvelle campagne.", "Titre de campagne Ethny", assets.privateChef, "Demander une proposition"],
+      ];
+
+      const emailShell = (campaign) => `<!doctype html>
+        <html lang="fr">
+          <head>
+            <meta charset="UTF-8" />
+            <style>
+              body { background:#f2ebdc; margin:0; padding:28px 0; }
+              .email { background:#fffffe; border:1px solid #ded8ca; border-radius:14px; margin:0 auto; max-width:640px; overflow:hidden; width:100%; }
+              .top { background:#1c3b34; padding:26px 24px 18px; text-align:center; }
+              .top img { margin:0 auto 14px; width:190px; }
+              .eyebrow { color:#f2ebdc; font:600 12px Arial,sans-serif; letter-spacing:1.8px; margin:0; text-transform:uppercase; }
+              .hero img { display:block; height:300px; object-fit:cover; width:100%; }
+              .section { padding:32px 24px; }
+              h1, h2 { color:#1c3b34; font-family:Georgia,serif; font-weight:600; letter-spacing:0; line-height:1.08; margin:0 0 16px; }
+              h1 { font-size:42px; }
+              h2 { font-size:28px; }
+              p { color:rgba(42,42,42,.78); font:16px/25px Arial,sans-serif; margin:0 0 16px; }
+              .button { background:#1c3b34; border-radius:10px; color:#f2ebdc; display:inline-block; font:600 15px Arial,sans-serif; padding:14px 22px; text-decoration:none; }
+              .card { border:1px solid #ded8ca; border-radius:14px; margin:0 0 12px; padding:18px; }
+              .card img { display:inline-block; margin-right:12px; vertical-align:middle; width:28px; }
+              .cta { background:#1c3b34; border-radius:14px; padding:28px 24px; text-align:center; }
+              .cta h2 { color:#f2ebdc; }
+              .cta p { color:rgba(242,235,220,.82); }
+              .cta .button { background:#f2ebdc; color:#1c3b34; }
+              .footer { background:#1c3b34; color:#f2ebdc; padding:28px 24px; text-align:center; }
+              .footer p { color:rgba(242,235,220,.75); font-size:12px; line-height:20px; margin:0; }
+            </style>
+          </head>
+          <body>
+            <div class="email">
+              <div class="top">
+                <img src="${assets.logoLight}" alt="Ethny Nomad Cuisine" />
+                <p class="eyebrow">${campaign[1]}</p>
+              </div>
+              <div class="hero"><img src="${campaign[5]}" alt="" /></div>
+              <div class="section">
+                <p class="eyebrow" style="color:#5e8d7a">Bonjour Camille</p>
+                <h1>${campaign[4]}</h1>
+                <p>Ethny Nomad Cuisine prepare des experiences culinaires premium, chaleureuses et sur mesure avec Chef Reginald Smit.</p>
+                <p>Ce template utilise la palette officielle, les typographies, le logo et les pictogrammes du brand kit. La disponibilite, la reservation et le prix final restent toujours valides humainement.</p>
+                <a class="button" href="#">${campaign[6]}</a>
+              </div>
+              <div class="section" style="background:#f2ebdc">
+                <div class="card"><img src="${assets.chefIcon}" alt="" /><strong>Chef a domicile</strong><p>Une table privee avec une cuisine soignee et une presence de chef adaptee au moment.</p></div>
+                <div class="card"><img src="${assets.eventIcon}" alt="" /><strong>Traiteur evenementiel</strong><p>Cocktail, diner assis, buffet elegant ou reception corporate selon le lieu et le niveau de service.</p></div>
+                <div class="card"><img src="${assets.classIcon}" alt="" /><strong>Cours de cuisine</strong><p>Ateliers prives et formations autour des gestes, des produits et des influences Ethny.</p></div>
+              </div>
+              <div class="section">
+                <div class="cta">
+                  <h2>Une experience a imaginer ?</h2>
+                  <p>Envoyez les premieres informations. Une proposition claire pourra etre preparee avec les postes separes.</p>
+                  <a class="button" href="#">Demander une proposition</a>
+                </div>
+              </div>
+              <div class="section">
+                <p>Avec plaisir,</p>
+                <h2>Chef Reginald Smit</h2>
+                <p>Ethny Nomad Cuisine</p>
+              </div>
+              <div class="footer"><p>Vous recevez cet email car vous avez ete en contact avec Ethny Nomad Cuisine. Se desinscrire</p></div>
+            </div>
+          </body>
+        </html>`;
+
+      const list = document.getElementById("templates");
+      const frame = document.getElementById("frame");
+      const stage = document.getElementById("stage");
+      let activeIndex = 0;
+
+      function render() {
+        const campaign = campaigns[activeIndex];
+        document.getElementById("category").textContent = campaign[1];
+        document.getElementById("title").textContent = campaign[0];
+        document.getElementById("subject").textContent = campaign[2];
+        document.getElementById("objective").textContent = campaign[3];
+        frame.srcdoc = emailShell(campaign);
+
+        [...list.children].forEach((button, index) => {
+          button.classList.toggle("active", index === activeIndex);
+        });
+      }
+
+      campaigns.forEach((campaign, index) => {
+        const button = document.createElement("button");
+        button.className = "template";
+        button.type = "button";
+        button.innerHTML = `<strong>${campaign[0]}</strong><small>${campaign[1]}</small>`;
+        button.addEventListener("click", () => {
+          activeIndex = index;
+          render();
+        });
+        list.appendChild(button);
+      });
+
+      document.getElementById("desktop").addEventListener("click", () => {
+        stage.classList.remove("mobile");
+        document.getElementById("desktop").classList.add("active");
+        document.getElementById("mobile").classList.remove("active");
+      });
+
+      document.getElementById("mobile").addEventListener("click", () => {
+        stage.classList.add("mobile");
+        document.getElementById("mobile").classList.add("active");
+        document.getElementById("desktop").classList.remove("active");
+      });
+
+      render();
+    </script>
+  </body>
+</html>

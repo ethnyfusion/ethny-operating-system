@@ -1,0 +1,42 @@
+{
+  "name": "ethny-email-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.20.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3002",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3002",
+    "preview:static": "python3 scripts/serve-email-preview.py",
+    "next:dev": "next dev -p 3000",
+    "next:build": "next build",
+    "next:start": "next start -p 3000",
+    "email:dev": "react-email dev --dir emails/campaigns --port 3001",
+    "email:build": "react-email build --dir emails/campaigns --outDir .react-email",
+    "email:check-env": "python3 scripts/check-email-env.py",
+    "email:send-test": "node scripts/send-test-email.mjs",
+    "admin:secret:setup": "node scripts/setup-admin-secret.mjs",
+    "email:doctor": "node scripts/email-dashboard-doctor.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-email/components": "^1.0.8",
+    "@react-email/render": "^1.0.5",
+    "next": "^14.2.23",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-email": "^5.2.9",
+    "resend": "^6.9.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^7.0.0"
+  }
+}

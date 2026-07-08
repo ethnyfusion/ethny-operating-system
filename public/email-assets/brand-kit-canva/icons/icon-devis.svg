@@ -1,0 +1,7 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Devis">
+  <path d="M72 38H158L194 74V218H72V38Z" stroke="#285447" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M158 38V78H194" stroke="#285447" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M96 116H170" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M96 150H170" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M96 184H138" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,16 @@
+library,category,folder,source_candidates,permission_required,status,notes
+Photos,Cuisine,ETHNY/Photos/Cuisine,sources/1.photos-site,yes,to_sort,Plats et gestes culinaires
+Photos,Produits,ETHNY/Photos/Produits,sources/1.photos-site,yes,to_sort,Ingrédients et produits locaux
+Photos,Dressages,ETHNY/Photos/Dressages,sources/1.photos-site,yes,to_sort,Assiettes et détails de dressage
+Photos,Portraits,ETHNY/Photos/Portraits,sources/1.photos-site,yes,to_sort,Chef et équipe
+Photos,Restaurant,ETHNY/Photos/Restaurant,sources/1.photos-site,yes,to_sort,Lieux et tables
+Photos,Événements,ETHNY/Photos/Événements,sources/1.photos-site,yes,to_sort,Mariages privés corporate
+Photos,Cours,ETHNY/Photos/Cours,sources/1.photos-site,yes,to_sort,Cours de cuisine
+Photos,Behind the scenes,ETHNY/Photos/Behind the scenes,sources/1.photos-site,yes,to_sort,Coulisses
+Photos,Voyages,ETHNY/Photos/Voyages,sources/1.photos-site,yes,to_sort,Inspiration nomade
+Photos,Partenaires,ETHNY/Photos/Partenaires,sources/1.photos-site,yes,to_sort,Lieux partenaires et prescripteurs
+Vidéos,Reels,ETHNY/Vidéos/Reels,sources/1.photos-site,yes,to_sort,Vidéos courtes verticales
+Vidéos,Stories,ETHNY/Vidéos/Stories,sources/1.photos-site,yes,to_sort,Stories verticales
+Vidéos,YouTube,ETHNY/Vidéos/YouTube,sources/2.videos-site,yes,to_sort,Vidéos longues
+Vidéos,B-Roll,ETHNY/Vidéos/B-Roll,sources/1.photos-site,yes,to_sort,Plans d'ambiance et gestes
+Vidéos,Interviews,ETHNY/Vidéos/Interviews,sources/2.videos-site,yes,to_sort,Chef et témoignages

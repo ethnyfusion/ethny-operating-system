@@ -1,0 +1,7 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evenement">
+  <path d="M64 74H192V204H64V74Z" stroke="#285447" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M88 52V92" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M168 52V92" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M92 128H164" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M92 160H138" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+</svg>

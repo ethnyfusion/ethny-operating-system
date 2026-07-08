@@ -1,71 +1,60 @@
-# ethny-operating-system
-# Ethny Operating System
+# Ethny Email Dashboard
 
-Repository central de pilotage pour organiser les projets Ethny, les recettes, les devis, les automatisations, le CRM, le plan financier, le contenu marketing, le site web et le projet créatif Henry Malik.
+Dashboard interne pour Ethny Nomad Cuisine :
 
+- campagnes React Email ;
+- preview navigateur ;
+- editeur HTML avec blocs premium ;
+- variables dynamiques CRM/n8n ;
+- tests Resend individuels ;
+- webhooks Resend et n8n prepares ;
+- deploiement Vercel sur `ops.ethny.be`.
 
-Ce repository sert de base de travail pour ChatGPT, Codex, VS Code et les futures automatisations internes.
+## Local
 
----
+```bash
+npm install
+npm run email:check-env
+npm run next:dev
+```
 
-## Objectif principal
-
-Créer une base structurée pour :
-
-- centraliser les projets Ethny ;
-- ranger les recettes, menus et fiches techniques ;
-- organiser les devis et offres clients ;
-- documenter les automatisations Gmail, Notion, Hostinger, CRM et workflows ;
-- suivre le plan financier et les priorités business ;
-- structurer le contenu Instagram, YouTube, SEO et branding ;
-- organiser le projet Henry Malik : chapitres, illustrations et bible visuelle ;
-- permettre à Codex de travailler proprement sur les fichiers.
-
----
-
-## Structure du repository
+Routes locales :
 
 ```text
-ethny-operating-system/
-│
-├── 00_index/
-│   ├── master_index.md
-│   ├── roadmap.md
-│   └── priorities.md
-│
-├── 01_ethny_business/
-│   ├── devis/
-│   ├── clients/
-│   └── offres/
-│
-├── 02_ethny_culinary/
-│   ├── recettes/
-│   ├── menus/
-│   ├── fiches-techniques/
-│   └── patisserie/
-│
-├── 03_automation/
-│   ├── gmail/
-│   ├── notion/
-│   ├── hostinger/
-│   ├── crm/
-│   └── workflows/
-│
-├── 04_finance/
-│   ├── plan-financier/
-│   └── tresorerie/
-│
-├── 05_content_branding/
-│   ├── instagram/
-│   ├── youtube/
-│   ├── seo/
-│   └── brand-system/
-│
-├── 06_henry_malik/
-│   ├── livre-2/
-│   ├── chapitres/
-│   ├── illustrations/
-│   └── bible-visuelle/
-│
-├── README.md
-└── AGENTS.md
+http://localhost:3000/email
+http://localhost:3000/email/editor
+```
+
+## Vercel
+
+Projet recommande :
+
+```text
+ethny-email-dashboard
+```
+
+Build :
+
+```bash
+npm run next:build
+```
+
+Variables serveur a ajouter dans Vercel :
+
+```bash
+RESEND_API_KEY=
+RESEND_FROM_EMAIL="Ethny Nomad Cuisine <contact@ethny.be>"
+RESEND_TEST_EMAIL=
+RESEND_WEBHOOK_SECRET=
+N8N_WEBHOOK_SECRET=
+ADMIN_SECRET=
+NEXT_PUBLIC_SITE_URL=https://ops.ethny.be
+ETHNY_DISABLE_LOCAL_ADMIN_BYPASS=true
+```
+
+Documentation complete :
+
+- `docs/vercel-email-dashboard-deploy.md`
+- `docs/email-html-editor.md`
+- `docs/resend-local-test.md`
+- `docs/github-publish.md`

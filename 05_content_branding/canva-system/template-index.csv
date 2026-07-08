@@ -1,0 +1,57 @@
+platform,template_name,canva_folder,format,dimensions,priority,status
+Instagram,Post Premium,ETHNY/Templates Instagram,Post portrait,1080x1350,high,to_create
+Instagram,Carrousel,ETHNY/Templates Instagram,Carousel,1080x1350,high,to_create
+Instagram,Avant / Après,ETHNY/Templates Instagram,Carousel,1080x1350,medium,to_create
+Instagram,Témoignage client,ETHNY/Templates Instagram,Post portrait,1080x1350,high,to_create
+Instagram,Citation,ETHNY/Templates Instagram,Post portrait,1080x1350,medium,to_create
+Instagram,Plat du jour,ETHNY/Templates Instagram,Post portrait,1080x1350,high,to_create
+Instagram,Signature Dish,ETHNY/Templates Instagram,Post portrait,1080x1350,high,to_create
+Instagram,Événement,ETHNY/Templates Instagram,Post portrait,1080x1350,high,to_create
+Instagram,Making Of,ETHNY/Templates Instagram,Reel cover,1080x1920,medium,to_create
+Instagram,Coulisses,ETHNY/Templates Instagram,Story/Reel,1080x1920,high,to_create
+Instagram,Astuce du Chef,ETHNY/Templates Instagram,Carousel,1080x1350,medium,to_create
+Instagram,Recette,ETHNY/Templates Instagram,Carousel,1080x1350,high,to_create
+Instagram,Produit local,ETHNY/Templates Instagram,Post portrait,1080x1350,medium,to_create
+Instagram,Saison,ETHNY/Templates Instagram,Post portrait,1080x1350,medium,to_create
+Instagram,FAQ,ETHNY/Templates Instagram,Carousel,1080x1350,medium,to_create
+Instagram,Promotion,ETHNY/Templates Instagram,Post portrait,1080x1350,low,to_create
+Instagram,Story,ETHNY/Templates Instagram,Story,1080x1920,high,to_create
+Instagram,Story Question,ETHNY/Templates Instagram,Story,1080x1920,medium,to_create
+Instagram,Story Sondage,ETHNY/Templates Instagram,Story,1080x1920,medium,to_create
+Instagram,Story Countdown,ETHNY/Templates Instagram,Story,1080x1920,high,to_create
+Instagram,Reel Cover,ETHNY/Templates Instagram,Reel cover,1080x1920,high,to_create
+Google Business,Actualité,ETHNY/Templates Google Business,Post GBP,1200x628,high,to_create
+Google Business,Nouvel avis,ETHNY/Templates Google Business,Post GBP,1200x628,high,to_create
+Google Business,Nouveau menu,ETHNY/Templates Google Business,Post GBP,1200x628,high,to_create
+Google Business,Chef à domicile,ETHNY/Templates Google Business,Post GBP,1200x628,high,to_create
+Google Business,Traiteur,ETHNY/Templates Google Business,Post GBP,1200x628,high,to_create
+Google Business,Mariage,ETHNY/Templates Google Business,Post GBP,1200x628,medium,to_create
+Google Business,Cours de cuisine,ETHNY/Templates Google Business,Post GBP,1200x628,medium,to_create
+Google Business,Promotion,ETHNY/Templates Google Business,Post GBP,1200x628,low,to_create
+Google Business,Horaires,ETHNY/Templates Google Business,Post GBP,1200x628,medium,to_create
+Google Business,Nouvel événement,ETHNY/Templates Google Business,Post GBP,1200x628,high,to_create
+Menus,Menu dégustation,ETHNY/Templates Menus,A4 portrait,2480x3508,high,to_create
+Menus,Menu mariage,ETHNY/Templates Menus,A4 portrait,2480x3508,high,to_create
+Menus,Menu entreprise,ETHNY/Templates Menus,A4 portrait,2480x3508,high,to_create
+Menus,Menu privé,ETHNY/Templates Menus,A4 portrait,2480x3508,high,to_create
+Menus,Buffet,ETHNY/Templates Menus,A4 portrait,2480x3508,medium,to_create
+Menus,Brunch,ETHNY/Templates Menus,A4 portrait,2480x3508,medium,to_create
+Menus,BBQ,ETHNY/Templates Menus,A4 portrait,2480x3508,medium,to_create
+Menus,Cocktail dînatoire,ETHNY/Templates Menus,A4 portrait,2480x3508,high,to_create
+Fiches recettes,Fiche recette professionnelle,ETHNY/Templates Recettes,A4 portrait,2480x3508,high,to_create
+Blog,Couverture,ETHNY/Templates Blog,Hero image,1600x900,medium,to_create
+Blog,Bannière,ETHNY/Templates Blog,Banner,1920x640,medium,to_create
+Blog,Miniature,ETHNY/Templates Blog,Thumbnail,1200x628,medium,to_create
+Newsletter,Hero,ETHNY/Templates Newsletter,Email block,1200x628,medium,to_create
+Newsletter,Promotion,ETHNY/Templates Newsletter,Email block,1200x628,low,to_create
+Newsletter,Recette,ETHNY/Templates Newsletter,Email block,1200x628,medium,to_create
+Newsletter,Événement,ETHNY/Templates Newsletter,Email block,1200x628,medium,to_create
+Newsletter,Signature,ETHNY/Templates Newsletter,Email signature,1200x400,medium,to_create
+YouTube,Thumbnail,ETHNY/Templates YouTube,Thumbnail,1280x720,medium,to_create
+YouTube,Cover Playlist,ETHNY/Templates YouTube,Cover,1280x720,low,to_create
+YouTube,Bannière,ETHNY/Templates YouTube,Banner,2560x1440,medium,to_create
+LinkedIn,Publication,ETHNY/Templates LinkedIn,Post,1200x1200,medium,to_create
+LinkedIn,Carrousel,ETHNY/Templates LinkedIn,Carousel,1080x1350,medium,to_create
+LinkedIn,Témoignage,ETHNY/Templates LinkedIn,Post,1200x1200,medium,to_create
+LinkedIn,Storytelling,ETHNY/Templates LinkedIn,Post,1200x1500,medium,to_create
+LinkedIn,Étude de cas,ETHNY/Templates LinkedIn,Document carousel,1080x1350,medium,to_create

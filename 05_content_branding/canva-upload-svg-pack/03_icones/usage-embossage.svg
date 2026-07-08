@@ -1,0 +1,8 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="usage embossage">
+  <rect x="0.5" y="0.5" width="63" height="63" rx="8" fill="#F7F4EE" stroke="#E1D8C7"/>
+  <g stroke="#1C3B34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 40L32 48L46 40"/>
+    <path d="M18 32L32 40L46 32"/>
+    <path d="M18 24L32 32L46 24L32 16L18 24Z"/>
+  </g>
+</svg>

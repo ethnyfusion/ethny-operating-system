@@ -1,22 +1,18 @@
 # Roadmap
 
-## Cette semaine
+## Court terme
 
-- Structurer le repository.
-- Créer les dossiers principaux.
-- Ajouter les premiers PROJECT_BRIEF.md.
-- Connecter le repository à Codex dans VS Code.
+- Structurer les devis, offres et reponses clients.
+- Centraliser les menus, recettes et fiches techniques.
+- Clarifier les priorites marketing et commerciales.
 
-## Ce mois-ci
+## Moyen terme
 
-- Centraliser les recettes et menus.
-- Structurer les devis et offres clients.
-- Définir les automatisations prioritaires.
-- Créer une base CRM claire.
+- Preparer les donnees pour un futur CRM Notion.
+- Organiser les workflows Gmail, contenu et suivi client.
+- Consolider les indicateurs financiers essentiels.
 
-## Trois prochains mois
+## Long terme
 
-- Automatiser les tâches répétitives.
-- Standardiser les offres Ethny.
-- Développer le contenu SEO et Instagram.
-- Structurer les projets créatifs Henry Malik.
+- Construire un systeme d'exploitation complet pour Ethny.
+- Relier les operations, le contenu, la prospection et la production culinaire.

@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="usage enseigne">
+  <rect x="0.5" y="0.5" width="63" height="63" rx="8" fill="#F7F4EE" stroke="#E1D8C7"/>
+  <g stroke="#1C3B34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 14V24"/>
+    <path d="M44 14V24"/>
+    <path d="M18 24H46V46H18Z"/>
+    <path d="M24 30A14 14 0 0 1 44 24"/>
+    <path d="M24 40A14 14 0 0 0 44 40"/>
+    <path d="M27 35H37"/>
+  </g>
+</svg>

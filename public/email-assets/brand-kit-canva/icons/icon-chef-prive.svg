@@ -1,0 +1,5 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chef prive">
+  <path d="M82 104C61 102 48 88 48 70C48 52 63 38 82 38C91 22 108 14 128 14C148 14 165 22 174 38C193 38 208 52 208 70C208 88 195 102 174 104" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M82 104V152C82 183 102 206 128 206C154 206 174 183 174 152V104" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+  <path d="M94 132H162" stroke="#285447" stroke-width="8" stroke-linecap="round"/>
+</svg>

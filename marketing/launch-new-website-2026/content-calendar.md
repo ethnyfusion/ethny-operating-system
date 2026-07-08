@@ -1,0 +1,37 @@
+# Calendrier éditorial 21 jours
+
+Campagne relative à une date de lancement à définir. Remplacer `Jour J` par la date réelle quand elle est validée.
+
+Priorité Instagram : chaque contenu est pensé d'abord pour Instagram, puis adapté vers Facebook, LinkedIn ou Google Business Profile selon le sujet.
+
+| Jour | Phase | Thème | Format recommandé | Idée de visuel | Texte court prêt à poster | CTA | Plateforme recommandée |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| J-7 | Teasing | Premier détail de la nouvelle identité | Carrousel 3 slides | Macro texture vert profond, fragment du cercle brisé, détail typographique | Une nouvelle étape se prépare pour Ethny. Plus profonde, plus claire, plus fidèle à ce que nous voulons faire vivre à table. | Suivre la suite | Instagram, Facebook |
+| J-6 | Teasing | La palette verte | Reel court ou post carré | Dégradé naturel de verts, matière papier, détail végétal, sans montrer le site | Le vert devient notre couleur de fond : végétal, profond, vivant. Une teinte pensée pour accompagner le voyage, le terroir et la précision du geste. | Découvrir demain | Instagram stories |
+| J-5 | Teasing | Pictogrammes signature | Carrousel 4 slides | 3 à 4 pictogrammes en monochrome sur fond crème ou vert | De nouveaux signes arrivent. Discrets, précis, faits pour accompagner l'expérience sans prendre la place du plat. | Voir les détails | Instagram |
+| J-4 | Teasing | Texture et filigrane | Story + post | Texture verte avec filigrane de vague, plan serré sur une assiette | Il y a des détails que l'on remarque à peine, mais qui changent toute l'atmosphère. C'est dans cette précision que la nouvelle identité prend forme. | Réagir en story | Instagram stories |
+| J-3 | Teasing | Coulisses du site | Reel 8 à 12 secondes | Capture très partielle du site, scroll flouté ou cadré sur un détail | Le nouveau site prend forme. Il racontera mieux les expériences, les services et la manière dont chaque événement est pensé avec soin. | Activer les notifications | Instagram |
+| J-2 | Teasing | Nouvelle identité, même exigence | Post 1080x1350 | Fond vert profond, logo partiel, phrase centrale | Nouvelle identité, même exigence. Demain, Ethny se révèle un peu plus. | Revenir demain | Instagram, Facebook |
+| J-1 | Teasing | Dernier aperçu avant reveal | Story compte à rebours | Animation simple : texture, logo masqué, pictogramme | Plus qu'un jour avant de découvrir la nouvelle présence en ligne d'Ethny. Un site pensé pour mieux vous guider vers votre prochaine expérience culinaire. | Mettre un rappel | Instagram stories |
+| Jour J | Reveal | Nouveau site en ligne | Reel + carrousel + story | Capture du site, logo complet, palette verte, photos culinaires | Le nouveau site Ethny est en ligne. Une identité plus claire, plus végétale et plus contemporaine pour raconter la même exigence : créer des expériences culinaires sur mesure, humaines et précises. | Découvrir le site | Instagram, Facebook, LinkedIn, GBP |
+| J+1 | Conversion | Chef à domicile | Carrousel service | Chef en action, table privée, assiette dressée | Pour un dîner à domicile, l'expérience commence avant l'assiette : échange, menu, rythme du service, détails du lieu. Ethny accompagne chaque moment avec précision. | Demander une proposition | Instagram, GBP |
+| J+2 | Conversion | Chef privé | Reel geste du chef | Dressage, feu, sauce, main en cuisine | Un chef privé, c'est plus qu'un menu. C'est une présence, un rythme, une cuisine pensée pour vos invités et votre maison. | Vérifier la disponibilité | Instagram |
+| J+3 | Conversion | Traiteur événementiel | Carrousel | Bouchées, buffet, service, détail de table | Réception privée, cocktail, repas assis ou événement d'entreprise : Ethny imagine une proposition culinaire cohérente, élégante et adaptée au lieu. | Demander un devis | Instagram, LinkedIn |
+| J+4 | Preuve sociale | Avis et confiance | Story + post sobre | Citation client validée ou placeholder "avis à intégrer" | La confiance se construit dans les détails : la clarté avant l'événement, la présence du chef, la précision du service et le souvenir laissé aux invités. | Lire les avis | Instagram, GBP |
+| J+5 | SEO local | Chef à domicile local | Post GBP + adaptation IG | Photo réelle d'un plat ou d'une table, mention de zone seulement si validée | Vous recherchez un chef à domicile pour un moment privé ou professionnel ? Ethny propose des expériences culinaires sur mesure, entre base française et influences nomades. | Envoyer une demande | Google Business Profile, Instagram |
+| J+6 | Service | Mariages et réceptions | Carrousel 5 slides | Table, bouchées, menu, geste, détail floral végétal | Pour un mariage intime ou une réception premium, la cuisine doit accompagner l'atmosphère sans la dominer. Ethny travaille le menu, le service et les détails avec exigence. | Parler de votre événement | Instagram, Facebook |
+| J+7 | Service | Anniversaires premium | Reel ou carrousel | Dessert signature, table conviviale, champagne sans promesse fournisseur | Un anniversaire peut devenir une vraie expérience de table : menu sur mesure, service fluide, cuisine généreuse et élégante. | Demander une proposition | Instagram |
+| J+8 | Service | Cours de cuisine | Post carré + story | Chef expliquant un geste, ingrédients, plan de travail | Les cours de cuisine Ethny sont pensés comme un moment vivant : apprendre, goûter, comprendre un geste et partager une cuisine qui voyage. | Poser une question | Instagram, Facebook |
+| J+9 | Expérience | Table d'hôte / privé | Carrousel atmosphère | Table dressée, lumière douce, plat signature | Certaines expériences se vivent en petit comité : une table, un menu, un fil conducteur et la présence du chef pour donner du relief au moment. | Découvrir les expériences | Instagram |
+| J+10 | Culinaire | Voyage et terroir | Reel plat signature | Moqueca, aubergine miso, ravioles ou dessert signature | Ethny part d'une base française et l'ouvre aux influences du Brésil, de l'Asie, de la Méditerranée et de l'Orient. Le voyage reste précis, jamais décoratif. | Voir les menus | Instagram |
+| J+11 | Corporate | Événements d'entreprise | LinkedIn post + IG adaptation | Réception corporate, bouchées, table sobre | Pour un dîner d'équipe, une réception client ou un moment corporate, Ethny apporte une cuisine soignée, une logistique claire et un service discret. | Échanger sur un projet | LinkedIn, Instagram |
+| J+12 | Réactivation | Anciens clients | Post + story | Avant/après identité, logo complet, photo culinaire forte | Vous nous avez déjà confié un dîner, un cours ou un événement. La nouvelle identité Ethny est aussi une manière de mieux raconter ces moments partagés. | Revenir en direct | Instagram, Facebook |
+| J+13 | Conversion | Récapitulatif services | Carrousel 7 slides | 1 slide par service avec pictogramme discret | Le nouveau site est ouvert. Chef à domicile, chef privé, traiteur événementiel, mariages, anniversaires premium, cours de cuisine ou expérience privée : chaque demande commence par une proposition sur mesure. | Demander une proposition | Instagram, GBP |
+
+## Notes de production
+
+- Produire J-7 à Jour J avant toute programmation.
+- Garder les visuels J-7 à J-1 volontairement partiels.
+- Utiliser les posts J+1 à J+13 pour orienter vers les demandes concrètes.
+- Adapter chaque caption en story avec une phrase plus courte.
+- Ne publier les avis clients qu'avec validation et preuve source.
