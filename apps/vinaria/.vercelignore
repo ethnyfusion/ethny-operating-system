@@ -1,0 +1,4 @@
+Procfile
+.next
+node_modules
+tsconfig.tsbuildinfo
