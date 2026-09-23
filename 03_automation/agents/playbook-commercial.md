@@ -7,7 +7,8 @@ Toute règle ici prime sur l'improvisation de l'agent. À mettre à jour par Reg
 
 - Marque : **Ethny Nomad Cuisine** (Ethny Fusion) — Chef Reginald Smit.
 - Positionnement : cuisine française ouverte sur le monde, premium, humaine, multiculturelle, sur mesure.
-- Boîte principale : `reginald@ethnyfusion.be`. Site : https://ethnyfusion.be
+- Boîte gérée : `ethnyfusion@gmail.com`, qui reçoit aussi `reginald@ethnyfusion.be` (redirection). Reginald envoie depuis les deux. Site : https://ethnyfusion.be
+- Canaux entrants majeurs : plateformes ChefMaison, StarOfService, Airbnb Experiences, Fetchef (réponse sur la plateforme).
 - Zone prioritaire : Wallonie (Liège, Namur, Ardennes, Brabant wallon), Bruxelles. Secondaire : Luxembourg belge, Grand-Duché, Flandre bilingue.
 
 ## Offres (ce qu'on vend)
