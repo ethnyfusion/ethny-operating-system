@@ -16,6 +16,7 @@ Seules les règles `active` s'appliquent ; les `candidate` attendent une 2e obse
 - R-INB-005 · candidate · 1 obs · 2026-09-23 — Un fil où Reginald a répondu mais a laissé une question du client sans réponse (ex. taux TVA) compte comme « attend une réponse » → Urgent si > 24 h. [Gouwestrand FACT-024]
 - R-INB-006 · candidate · 1 obs · 2026-09-23 — Demandes StarOfService « cherche un wedding planner » : hors offre → `9-Bruit`, sauf si le texte mentionne repas / traiteur. [1a0a9d36391f998a]
 - R-INB-007 · candidate · 1 obs · 2026-09-23 — Réservation plateforme avec événement < 14 j et messages client non lus → `1-Urgent` même si la réservation est confirmée. [1a0cd1785d45a09e]
+- R-INB-008 · candidate · 1 obs · 2026-09-23 — Exception à R-INB-001 : quand Reginald écrit lui-même à une adresse humaine de la plateforme (ex. `operations@chefmaison.com`, pas une adresse no-reply), un vrai brouillon Gmail est possible et utile sur ce fil-là. [1a0cd28f3d114461, Thomas/Château de Balmoral]
 
 ## Retirées
 
