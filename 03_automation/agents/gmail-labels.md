@@ -15,5 +15,6 @@ Les numéros forcent l'ordre d'affichage dans Gmail.
 | `Ethny/8-Newsletters` | Newsletters, outils, notifications SaaS | Rien |
 | `Ethny/9-Bruit` | Pub, sollicitations non pertinentes | Rien (jamais supprimé) |
 | `Ethny/Brouillon-pret` | Fils pour lesquels un brouillon attend la relecture de Reginald | Retirer après envoi |
+| `Ethny/Erreur-agent` | Posé **par Reginald** sur un fil mal traité (mauvais classement, lead raté, brouillon à côté) | Lu par le Coach, qui en tire une règle puis retire le libellé |
 
 Règles : l'agent ne supprime, n'archive et ne marque jamais en spam. Il ne fait qu'ajouter des libellés et créer des brouillons.

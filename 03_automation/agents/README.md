@@ -6,6 +6,15 @@ Deux agents Claude Code, branchés sur Gmail et Firecrawl, qui partagent le mêm
 | --- | --- | --- | --- |
 | **Inbox Manager** | Trie la boîte, libelle, détecte leads/opportunités, prépare réponses et relances J+4/J+10 | `/inbox-triage [période]` | `.claude/agents/ethny-inbox-manager.md` |
 | **Lead Prospector & Operator** | Trouve 5–6 leads qualifiés, vérifie les contacts, rédige les emails en brouillons Gmail | `/prospect-leads [segment] [zone] [nombre]` | `.claude/agents/ethny-lead-prospector.md` |
+| **Coach** | Mesure ce que tu fais des brouillons/libellés, apprend des erreurs, met à jour les règles, propose les gros changements | (appelé par le cycle) | `.claude/agents/ethny-agent-coach.md` |
+| **Cycle** | Enchaîne Inbox → Prospection → Coach, pour la Routine 3×/semaine | `/ethny-cycle` | `.claude/skills/ethny-cycle/SKILL.md` |
+
+Boucle d'auto-amélioration, maîtrise des crédits et calendrier : voir **`ARCHITECTURE.md`**. Mémoire des agents : `memory/`.
+
+**Ton rôle dans l'apprentissage** (2 gestes suffisent) :
+- pose le libellé Gmail `Ethny/Erreur-agent` sur un fil mal traité ;
+- écris tes remarques en vrac dans `memory/feedback.md` (ou dis-les à Claude), et valide les propositions du Coach par « ok P-NNN ».
+Le reste (brouillons envoyés tels quels, modifiés ou abandonnés) est mesuré automatiquement.
 
 On peut aussi simplement écrire « trie mes mails » ou « trouve-moi 6 leads wedding planners à Liège » : Claude choisit l'agent adapté.
 
@@ -43,8 +52,5 @@ Inbox Manager ──► nouvelles demandes entrantes ──► Ethny/2-Lead + br
 
 ## Automatiser (Routines)
 
-Recommandé :
-- `/inbox-triage` chaque jour ouvré à 8h (Bruxelles) ;
-- `/prospect-leads` le lundi et le jeudi à 9h, en alternant les segments.
-
-Les Routines Claude Code peuvent lancer ces commandes à heure fixe dans une session cloud sur ce dépôt, avec le connecteur Gmail autorisé.
+Une seule Routine : `/ethny-cycle` **lundi, mercredi, vendredi à 07:30** (Bruxelles), session neuve à chaque fois, connecteurs Gmail + Firecrawl.
+Rodage 4 semaines, puis passage en croisière si les objectifs sont atteints (détails dans `ARCHITECTURE.md` §5).
