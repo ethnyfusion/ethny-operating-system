@@ -8,7 +8,7 @@ Objectif : des agents qui **apprennent de leurs erreurs** à partir de signaux r
             ┌──────────────── Cycle Ethny (lun · mer · ven, 07:30) ────────────────┐
             │                                                                       │
  Gmail ───► │ 1. Inbox Manager ──► libellés + brouillons + pipeline + run log       │
-            │ 2. Lead Prospector (lun, mer) ──► 6 brouillons + pipeline + run log   │
+            │ 2. Lead Prospector (lun, mer) ──► 10 brouillons + pipeline + run log   │
             │ 3. Coach ──► mesure → diagnostique → améliore (learnings / proposals) │
             └───────────────────────────────────────────────────────────────────────┘
                           ▲                                   │
@@ -75,7 +75,7 @@ Chaque changement appliqué est noté dans `changelog.md` avec l'indicateur vis�
 - indicateur meilleur ou stable → le changement reste ;
 - indicateur pire sur ≥ 2 revues → **retour arrière** automatique (niveau 1) ou proposition de retour (niveau 2).
 
-Pour la prospection, les modèles tournent en **A/B** (variante `A`/`B` notée dans `drafts.jsonl`). Honnêteté statistique : avec ~12 envois/semaine, un taux de réponse n'est lisible qu'après ~30 envois par variante. Avant ça, le Coach s'appuie surtout sur le taux d'édition des brouillons (disponible dès la première semaine).
+Pour la prospection, les modèles tournent en **A/B** (variante `A`/`B` notée dans `drafts.jsonl`). Honnêteté statistique : avec ~20 envois/semaine, un taux de réponse n'est lisible qu'après ~30 envois par variante. Avant ça, le Coach s'appuie surtout sur le taux d'édition des brouillons (disponible dès la première semaine).
 
 ## 3. Indicateurs suivis (`metrics.md`)
 
@@ -86,7 +86,7 @@ Pour la prospection, les modèles tournent en **A/B** (variante `A`/`B` notée d
 | Précision du classement (1 − corrections / fils libellés) | ≥ 95 % | libellés |
 | Leads entrants manqués (signalés par Reginald) | 0 | `Ethny/Erreur-agent`, feedback |
 | Taux de réponse prospection | ≥ 10 % | pipeline |
-| Leads prospection retenus / livrés (score ≥ 50) | 6/6 | runs |
+| Leads prospection ultra-qualifiés livrés (score ≥ 60, email vérifié) | 10/10 | runs |
 | Coût : fils lus + pages scrapées par run | en baisse | runs |
 
 ## 4. Maîtrise des crédits
@@ -96,7 +96,7 @@ Pour la prospection, les modèles tournent en **A/B** (variante `A`/`B` notée d
 | Fréquence | **1 seule Routine**, 3×/semaine (lun · mer · ven), une session pour les 3 agents |
 | Modèle | `sonnet` pour les 3 agents (qualité suffisante, beaucoup moins cher que le modèle le plus grand) |
 | Inbox | Max 40 fils/run ; lecture des extraits (`search_threads`) d'abord, `get_thread` seulement pour les fils non-bruit ; fils déjà libellés ignorés |
-| Prospector | Lun + mer seulement ; max 15 candidats, max 3 pages scrapées par candidat ; recherche stoppée dès 6 leads ≥ 50 |
+| Prospector | Lun + mer seulement ; max 25 candidats, max 3 pages scrapées par candidat ; recherche stoppée dès 10 leads ≥ 60 |
 | Coach | Mode **léger** lun/mer (compteurs + libellés corrigés, ~aucun raisonnement) ; mode **complet** le vendredi seulement ; max 15 brouillons comparés |
 | Mémoire | Règles plafonnées à 25/agent ; `runs.jsonl` résumé et purgé au-delà de 8 semaines |
 | Arrêt | Si rien de nouveau dans la boîte et pipeline vide de relances → run court, pas de Coach |

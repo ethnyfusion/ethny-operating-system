@@ -10,8 +10,8 @@ Cycle d'une Routine. Économe : chaque étape est sautée si elle n'a rien à fa
 2. **Inbox** — lance le sous-agent `ethny-inbox-manager` (outil Agent, premier plan) :
    « Traite la boîte selon tes instructions. Période : depuis le dernier run inscrit dans runs.jsonl (défaut 3 jours). Date : <date>. Ne commite pas, je m'en charge. »
 
-3. **Prospection** — seulement **lundi et mercredi** (pendant le rodage, voir `memory/metrics.md`), et seulement si le pipeline compte moins de 25 prospects en `brouillon_pret` non envoyés (sinon Reginald a déjà de quoi faire : saute et dis-le).
-   Lance `ethny-lead-prospector` : « Session de prospection selon tes instructions, segment=mix, nombre=6. Date : <date>. Ne commite pas, je m'en charge. »
+3. **Prospection** — seulement **lundi et mercredi** (pendant le rodage, voir `memory/metrics.md`), et seulement si le pipeline compte moins de 40 prospects en `brouillon_pret` non envoyés (sinon Reginald a déjà de quoi faire : saute et dis-le).
+   Lance `ethny-lead-prospector` : « Session de prospection selon tes instructions, segment=mix, nombre=10. Date : <date>. Ne commite pas, je m'en charge. »
 
 4. **Coach** — lance `ethny-agent-coach` : mode `complet` le **vendredi**, `léger` les autres jours. Saute le coach léger si l'inbox n'a rien traité et qu'aucun brouillon n'a été créé.
 

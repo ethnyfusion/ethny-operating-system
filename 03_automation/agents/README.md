@@ -5,7 +5,7 @@ Deux agents Claude Code, branchés sur Gmail et Firecrawl, qui partagent le mêm
 | Agent | Rôle | Commande | Fichier |
 | --- | --- | --- | --- |
 | **Inbox Manager** | Trie la boîte, libelle, détecte leads/opportunités, prépare réponses et relances J+4/J+10 | `/inbox-triage [période]` | `.claude/agents/ethny-inbox-manager.md` |
-| **Lead Prospector & Operator** | Trouve 5–6 leads qualifiés, vérifie les contacts, rédige les emails en brouillons Gmail | `/prospect-leads [segment] [zone] [nombre]` | `.claude/agents/ethny-lead-prospector.md` |
+| **Lead Prospector & Operator** | Trouve 10 leads ultra-qualifiés, vérifie les contacts, rédige les emails en brouillons Gmail | `/prospect-leads [segment] [zone] [nombre]` | `.claude/agents/ethny-lead-prospector.md` |
 | **Coach** | Mesure ce que tu fais des brouillons/libellés, apprend des erreurs, met à jour les règles, propose les gros changements | (appelé par le cycle) | `.claude/agents/ethny-agent-coach.md` |
 | **Cycle** | Enchaîne Inbox → Prospection → Coach, pour la Routine 3×/semaine | `/ethny-cycle` | `.claude/skills/ethny-cycle/SKILL.md` |
 
@@ -16,12 +16,12 @@ Boucle d'auto-amélioration, maîtrise des crédits et calendrier : voir **`ARCH
 - écris tes remarques en vrac dans `memory/feedback.md` (ou dis-les à Claude), et valide les propositions du Coach par « ok P-NNN ».
 Le reste (brouillons envoyés tels quels, modifiés ou abandonnés) est mesuré automatiquement.
 
-On peut aussi simplement écrire « trie mes mails » ou « trouve-moi 6 leads wedding planners à Liège » : Claude choisit l'agent adapté.
+On peut aussi simplement écrire « trie mes mails » ou « trouve-moi 10 leads wedding planners à Liège » : Claude choisit l'agent adapté.
 
 ## Le flux
 
 ```
-Prospector ──► 6 brouillons Gmail + lignes pipeline (brouillon_pret)
+Prospector ──► 10 brouillons Gmail + lignes pipeline (brouillon_pret)
                      │
              Reginald relit et envoie
                      │
