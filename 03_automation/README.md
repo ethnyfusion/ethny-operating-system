@@ -16,6 +16,7 @@ Documenter les workflows futurs pour Gmail, Notion, Hostinger, CRM et autres aut
 ## Fichiers actifs
 
 - `google_workspace_sync_status.md` : etat de connexion Google Workspace, compte cible et tests restants.
+- `agents/` : agents commerciaux Claude (Inbox Manager + Lead Prospector), playbook, modeles et libelles Gmail. Voir `agents/README.md`.
 
 ## Prochaines actions possibles
 

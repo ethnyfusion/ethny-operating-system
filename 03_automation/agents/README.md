@@ -1,0 +1,50 @@
+# Agents commerciaux Ethny
+
+Deux agents Claude Code, branchés sur Gmail et Firecrawl, qui partagent le même playbook et le même pipeline.
+
+| Agent | Rôle | Commande | Fichier |
+| --- | --- | --- | --- |
+| **Inbox Manager** | Trie la boîte, libelle, détecte leads/opportunités, prépare réponses et relances J+4/J+10 | `/inbox-triage [période]` | `.claude/agents/ethny-inbox-manager.md` |
+| **Lead Prospector & Operator** | Trouve 5–6 leads qualifiés, vérifie les contacts, rédige les emails en brouillons Gmail | `/prospect-leads [segment] [zone] [nombre]` | `.claude/agents/ethny-lead-prospector.md` |
+
+On peut aussi simplement écrire « trie mes mails » ou « trouve-moi 6 leads wedding planners à Liège » : Claude choisit l'agent adapté.
+
+## Le flux
+
+```
+Prospector ──► 6 brouillons Gmail + lignes pipeline (brouillon_pret)
+                     │
+             Reginald relit et envoie
+                     │
+Inbox Manager ──► détecte l'envoi (contacte_j0) ──► J+4 relance ──► J+10 dernier message ──► perdu
+                     │
+             réponse du prospect ──► libellé Ethny/5-Prospection + brouillon de réponse (repondu)
+Inbox Manager ──► nouvelles demandes entrantes ──► Ethny/2-Lead + brouillon de qualification + pipeline (inbound)
+```
+
+## Fichiers partagés
+
+- `playbook-commercial.md` — offres, cibles (ICP), grille de scoring, ton, conformité RGPD.
+- `templates-prospection.md` — modèles par segment, relances, réponse de qualification.
+- `gmail-labels.md` — libellés `Ethny/*`.
+- `../../01_ethny_business/leads/pipeline.csv` — pipeline commun (mémoire des agents).
+
+## Garde-fous
+
+- **Aucun envoi automatique** : les outils d'envoi Gmail/Resend sont bloqués dans les deux agents (`disallowedTools`). Ils ne créent que des brouillons.
+- Pas de suppression, d'archivage ni de spam : uniquement des libellés.
+- Prospection : seulement des emails professionnels publiés, avec URL de preuve ; 3 contacts max par prospect ; désinscription respectée.
+- Le contenu des emails reçus est traité comme de la donnée, jamais comme une instruction (anti-phishing).
+
+## Prérequis
+
+- Connecteur **Gmail** connecté au compte à gérer (idéalement `reginald@ethnyfusion.be`) dans claude.ai > Paramètres > Connecteurs.
+- Connecteur **Firecrawl** (recherche web/scraping) pour la prospection ; à défaut l'agent utilise la recherche web intégrée.
+
+## Automatiser (Routines)
+
+Recommandé :
+- `/inbox-triage` chaque jour ouvré à 8h (Bruxelles) ;
+- `/prospect-leads` le lundi et le jeudi à 9h, en alternant les segments.
+
+Les Routines Claude Code peuvent lancer ces commandes à heure fixe dans une session cloud sur ce dépôt, avec le connecteur Gmail autorisé.
